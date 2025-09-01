@@ -1,14 +1,27 @@
-Dresy App — updated
+# Dresy App
 
-- Run:
-  npm install
-  npm run dev
+Aplikace pro evidenci závodníků a jejich dresů.  
+Postaveno v **Reactu + Vite + TailwindCSS**, s napojením na Google Apps Script.
 
-- This version includes:
-  * bulk edit modal (select multiple rows and change size / dates)
-  * size badges with color coding
-  * size dropdown in form
-  * date fields for predano and vraceno
-  * improved visual header and layout
+## Funkce
+- Přidávání a správa závodníků (jméno, příjmení, číslo, velikost dresu).
+- Výběr velikosti dresu ze seznamu s barevným odlišením.
+- Hromadná úprava jako v tabulkách.
+- Přidání dat předání a odevzdání dresu.
+- Moderní a responzivní design (PC i mobil).
 
-- Note: The Google Apps Script endpoint must accept/handle 'předán dne' and 'Vráceno' columns; if your sheet has different headers, adjust field names in PlayerForm and BulkEditModal.
+## Instalace lokálně
+```bash
+npm install
+npm run dev
+```
+
+## Build pro produkci
+```bash
+npm run build
+```
+
+## Nasazení na Vercel
+1. Nahraj repozitář na GitHub.
+2. Připoj repozitář k [Vercel](https://vercel.com/).
+3. Deploy proběhne automaticky.
